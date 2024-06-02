@@ -4,7 +4,7 @@ bot = Worker()
 bot.setName("[GOOOL] Idiot")
 bot.enterMultiplayer()
 games = bot.getCurrentGames()
-#bot.joinGame(games[0])
+bot.waitForGame(["PVE"])
 time.sleep(1000)
 
 '''

@@ -129,9 +129,13 @@ class Worker():
     def waitForGame(self, allowedTypes):
         while True:
             games = self.getCurrentGames()
+            foundGame = False
             for game in games:
                 if game.type in allowedTypes:
                     self.joinGame(game)
+                    foundGame = True
                     break
+            if foundGame:
+                break
             time.sleep(1)
 
