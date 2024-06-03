@@ -1,11 +1,11 @@
 
 class Game():
     def __init__(self, type, column, row):
-        self.stickerSize = 27
-        self.startX = 260
-        self.startY = 118
-        self.xOffset = 132
-        self.yOffset = 132
+        self.stickerSize = 45
+        self.startX = 547
+        self.startY = 184
+        self.xOffset = 211
+        self.yOffset = 211
         self.gamesPerRow = 4
 
         self.type = type

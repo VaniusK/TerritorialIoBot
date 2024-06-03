@@ -1,10 +1,13 @@
-from worker import Worker
+from player import Player
 import time
-bot = Worker()
+bot = Player()
 bot.setName("[GOOOL] Idiot")
+bot.adjustSettings()
 bot.enterMultiplayer()
 games = bot.getCurrentGames()
-bot.waitForGame(["PVE"])
+print(games)
+bot.waitForGame(["PVE", "FFA"])
+bot.chooseStartLocation()
 time.sleep(1000)
 
 '''
